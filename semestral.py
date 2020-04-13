@@ -217,7 +217,7 @@ def bayes(trained_trigram, testing_trigram):
             sliceprst.append(rowprst)
         sliceprst = prod(sliceprst)
         trigramprst.append(sliceprst)
-    resultprst = prod(trigramprst) * apriorni_prst
+    resultprst = abs(prod(trigramprst) * apriorni_prst)
     return resultprst
 
 
