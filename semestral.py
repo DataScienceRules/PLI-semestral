@@ -211,13 +211,13 @@ def bayes(trained_trigram, testing_trigram):
                 elif v > 0:
                     firstidx = alphabet.index(k[0])
                     secondidx = alphabet.index(k[1])
-                    onekeyprst = -log(trained_trigram[firstidx][secondidx][k] * v)
+                    onekeyprst = log(trained_trigram[firstidx][secondidx][k] * v)
                     rowprst.append(onekeyprst)
             rowprst = prod(rowprst)
             sliceprst.append(rowprst)
         sliceprst = prod(sliceprst)
         trigramprst.append(sliceprst)
-    resultprst = prod(trigramprst) - log(apriorni_prst)
+    resultprst = prod(trigramprst) * apriorni_prst
     return resultprst
 
 
