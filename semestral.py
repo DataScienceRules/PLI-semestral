@@ -209,15 +209,15 @@ def bayes(trained_trigram, testing_trigram):
                 if v == 0:
                     pass
                 elif v > 0:
-                    firstidx = alphabet.index(k[0])
-                    secondidx = alphabet.index(k[1])
-                    onekeyprst = log(trained_trigram[firstidx][secondidx][k] * v)
+                    firstidx = reduced_alphabet.index(k[0])
+                    secondidx = reduced_alphabet.index(k[1])
+                    onekeyprst = -log(trained_trigram[firstidx][secondidx][k] * v)
                     rowprst.append(onekeyprst)
-            rowprst = prod(rowprst)
+            rowprst = npsum(rowprst)
             sliceprst.append(rowprst)
-        sliceprst = prod(sliceprst)
+        sliceprst = npsum(sliceprst)
         trigramprst.append(sliceprst)
-    resultprst = abs(prod(trigramprst) * apriorni_prst)
+    resultprst = npsum(trigramprst) * apriorni_prst
     return resultprst
 
 
