@@ -10,6 +10,7 @@ Výsledky testů
 A) Plná abeceda
 
   1) úryvky z diplomových prací
+  
   DPtextcz
   
   CZ  1.9098168889242554e+266
@@ -21,6 +22,7 @@ A) Plná abeceda
   SK  inf
   
   2) krátké články z hospodářských novin
+  
   HNtext
   
   CZ  inf
