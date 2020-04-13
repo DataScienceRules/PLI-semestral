@@ -11,19 +11,23 @@ A) Plná abeceda
 
   1) úryvky z diplomových prací
   DPtextcz
+  
   CZ  1.9098168889242554e+266
   SK  inf
   
   DPtextsk
+  
   CZ  inf
   SK  inf
   
   2) krátké články z hospodářských novin
   HNtext
+  
   CZ  inf
   SK  inf
   
   HNtextsk
+  
   CZ  1.1408317299693401e+213
   SK  3.1591679913380422e+190
 
