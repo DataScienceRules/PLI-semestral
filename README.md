@@ -82,3 +82,5 @@ B) Redukovaná abeceda
   CZ  74.99367608750102
   
   SK  73.85305306407795
+  
+  https://tatoeba.org/eng/downloads
